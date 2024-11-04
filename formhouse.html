@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+    <title>House rental</title>
+    <link rel="icon" href="house%20logo%20fav.png">
+    </head>
+    <body>
+    <style>
+        body{
+    background: #ddd;
+    min-height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    
+}
+.card{
+    margin: auto;
+    width: 600px;
+    padding: 3rem 3.5rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mt-50 {
+    margin-top: 50px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+}
+
+
+@media(max-width:767px){
+    .card{
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+@media(height:1366px){
+    .card{
+        width: 90%;
+        padding: 8vh;
+    }
+}
+.card-title{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.nav{
+    display: flex;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: unset;
+    margin-bottom: 6vh;
+}
+.nav li{
+    padding: 1rem;
+}
+.nav li a{
+    color: black;
+    text-decoration: none;
+}
+.active{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    width: 100%;
+    min-width: unset;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+}
+form a{
+    color:grey;
+    text-decoration: none;
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+form a:hover{
+    color:grey;
+    text-decoration: none;
+}
+form .row{
+    margin: 0;
+    overflow: hidden;
+}
+form .row-1{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+    min-width: unset;
+    border-radius: 5px;
+    background-color: rgba(221, 228, 236, 0.301);
+    border-color: rgba(221, 228, 236, 0.459);
+    margin: 2vh 0;
+    overflow: hidden;
+}
+form .row-2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0.8rem;
+}
+form .row .row-2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0.8rem;
+}
+form .row .col-2,.col-7,.col-3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 1vh;
+}
+form .row .col-2{
+    padding-right: 0;
+}
+
+#card-header{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+#card-inner{
+    font-size: 0.7rem;
+    color: gray;
+}
+.three .col-7{
+    padding-left: 0;
+}
+.three{
+    overflow: hidden;
+    justify-content: space-between;
+}
+.three .col-2{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+    min-width: unset;
+    border-radius: 5px;
+    background-color: rgba(221, 228, 236, 0.301);
+    border-color: rgba(221, 228, 236, 0.459);
+    margin: 2vh 0;
+    width: fit-content;
+    overflow: hidden; 
+}
+.three .col-2 input{
+    font-size: 0.7rem;
+    margin-left: 1vh;
+}
+.btn{
+    width: 100%;
+    background-color: rgb(65, 202, 127);
+    border-color: rgb(65, 202, 127);
+    color: white;
+    justify-content: center;
+    padding: 2vh 0;
+    margin-top: 3vh;
+}
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none; 
+}
+.btn:hover{
+    color: white;
+}
+input:focus::-webkit-input-placeholder { 
+    color:transparent; 
+}
+input:focus:-moz-placeholder { 
+    color:transparent; 
+} 
+input:focus::-moz-placeholder { 
+    color:transparent; 
+} 
+input:focus:-ms-input-placeholder { 
+    color:transparent; 
+}
+        </style>
+    </body>
+<div class="card mt-50 mb-50">
+            <div class="card-title mx-auto"><img src="house%20logo%20fav.png" style="width: 150px;">
+                                        
+            </div>
+            <div class="nav">
+                <ul class="mx-auto">
+<!--                    <li><a href="#">Account</a></li>-->
+                    <li class="active"><a href="#"> Please fill this form before you prceed, The house you are about to rent cost $550</a></li>
+                </ul>
+            </div>
+    <h4>Note form cost $60</h4>
+    <strong>Appoitment for survey of the house will be given to you after you fill the form</strong>
+    <br/>
+    <br/>
+            <form action="account.html">
+                <div class="col-12">
+                      <label for="yourName" class="form-label">Your First Name</label>
+                      <input type="text" name="name" class="form-control" id="yourName" required="" placeholder="please enter your first name here">
+                 
+                    </div>
+                <br/>
+                <br/>
+                 <div class="col-12">
+                      <label for="yourName" class="form-label">Your Last Name</label>
+                      <input type="text" name="name" class="form-control" id="yourName" required="" placeholder="please enter your last name here">
+                 
+                    </div>
+                <br/>
+                <br/>
+
+                    <div class="col-12">
+                      <label for="yourEmail" class="form-label">Your Email</label>
+                      <input type="email" name="email" class="form-control" id="yourEmail" placeholder="Please enter your email here" required="">
+                      
+                    </div>
+                <br/>
+                <div class="col-12">
+                <br/>
+							<label>Upload a picture of your id or driving license</label>
+						</div>
+						
+							<input type="file" name="ifile" required="">
+                
+
+                    <div class="col-12">
+                      <label for="yourUsername" class="form-label"></label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend"></span>
+                        <input type="text" name="username" class="form-control" id="yourUsername">
+                    
+                      </div>
+                    </div>
+<br/>
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label">Why would you like to Rent this house?</label><br/>
+<!--                        <input type="password" name="password" class="form-control" id="yourPassword">-->
+     <select>
+                            <option></option>
+                             <option>Increased rent in old house?</option>
+                                <option>Need change of enviroment</option>
+                                 <option>Unable to pay rent in old house</option>
+                                <option>Previous apartment was un-comfotable?</option>
+                        </select><input type="text" placeholder="Specify (optional)">
+                        
+                      
+                    </div>
+             
+                
+  <div class="sign-up1">
+                <br/>
+						<strong>Pay $60 to "carolinarentals" paypal</strong>
+                <button class="btn d-flex mx-auto"><b>Proceed</b></button>
+            </form>
+        </div>
+<html>
